@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+    <html>
+    <head>
+        <title>{{ post.title }}</title>
+    </head>
+    <body>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }}</p>
+        <p>От:{{ post.name }}</p>
+        <a href="{{ url_for('post') }}">Back to post</a>
+    </body>
+    </html>
+{% endblock %}
